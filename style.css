@@ -4,10 +4,41 @@ body {
     margin-top: 50px;
 }
 
+input {
+    display: block;
+    text-align: left;
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 8px; 
+}
+
 .container {
     max-width: 600px;
     margin: auto;
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left; 
+}
+
+.bmi-title{
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+}
+
+.text-weight, .text-height, input, button {
+    display: block;
+    text-align: left;
+}
+
+.btn-submit {
+    background-color: blue;
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
 }

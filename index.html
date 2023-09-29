@@ -10,15 +10,17 @@
 
     <!-- Input Data -->
 <div class="container">
-    <h2>BMI Calculator</h2>
-    <p>Masukkan Berat Badan (KG):</p>
-    <input type="number" id="weight" placeholder="Contoh: 60">
+    <h2 class="bmi-title">Check Your BMI</h2>
+    <p class="description">Enter your weight and height below to check your BMI results</p>
 
-    <p>Masukkan Tinggi Badan (CM):</p>
-    <input type="number" id="height" placeholder="Contoh: 167">
+    <p class="text-weight">Put your weight in here(kg)</p>
+    <input type="number" id="weight" placeholder="60">
+
+    <p class="text-height">And your height in here (cm)</p>
+    <input type="number" id="height" placeholder="167">
 
     <br><br>
-    <button onclick="calculateBMI()">Hitung BMI</button>
+    <button class="btn-submit" onclick="calculateBMI()">Calculate BMI</button>
 
     <div id="result"></div>
 </div>
