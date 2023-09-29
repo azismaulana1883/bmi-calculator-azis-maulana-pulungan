@@ -8,8 +8,8 @@ function calculateBMI() {
     }
 
     if (weight === 0 && height === 0) {
-        alert('Berat dan tinggi tidak boleh 0!');
-        return;
+        alert('Data tidak boleh bernilai 0');
+        return alert;
     }
 
     let heightInMeters = height / 100;
