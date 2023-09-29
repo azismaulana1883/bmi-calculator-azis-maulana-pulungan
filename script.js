@@ -7,6 +7,11 @@ function calculateBMI() {
         return;
     }
 
+    if (weight === 0 && height === 0) {
+        alert('Berat dan tinggi tidak boleh 0!');
+        return;
+    }
+
     let heightInMeters = height / 100;
     let bmi = weight / (heightInMeters * heightInMeters);
     bmi = bmi.toFixed(1);
