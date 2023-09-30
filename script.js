@@ -12,6 +12,8 @@ function calculateBMI() {
         return alert;
     }
 
+    // (weight === 0 && height === 0) ? alert('data tidak boleh bernilai 0') : null;
+
     let heightInMeters = height / 100;
     let bmi = weight / (heightInMeters * heightInMeters);
     bmi = bmi.toFixed(1);
@@ -25,6 +27,11 @@ function calculateBMI() {
         category = "Overweight";
     } else {
         category = "Obesity";
+    }
+
+    if(category == 'Normal Weight')
+    {
+        category = 'Normal';
     }
 
     let resultDiv = document.getElementById('result');
