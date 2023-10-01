@@ -23,10 +23,12 @@ input {
 
 .bmi-title{
     text-align: center;
+    font-family: sans-serif;
 }
 
 .description{
     text-align: center;
+    font-family: sans-serif;
 }
 
 .text-weight, .text-height, input, button {
@@ -40,5 +42,12 @@ input {
     width: 100px;
     border-radius: 4px;
     color: white;
-    cursor: pointer;
+    cursor:progress;
+    font-family: sans-serif;
+    border: 1px solid blue;
+    border-radius: 4px;
+    background-color: blue;
+    color: white;
+    margin-right: 41%;
+    text-shadow: #ccc;
 }
