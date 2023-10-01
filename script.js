@@ -3,13 +3,13 @@ function calculateBMI() {
     let height = parseFloat(document.getElementById('height').value);
 
     if (isNaN(weight) || isNaN(height)) {
-        alert('Masukkan data yang valid!');
+        document.getElementById('result').innerHTML = '<b>Not A Number!</b>';
         return;
     }
 
     if (weight === 0 && height === 0) {
-        alert('Data tidak boleh bernilai 0');
-        return alert;
+        document.getElementById('result').innerHTML = `<b>The Number can't be 0</b>`;
+        return;
     }
 
     // (weight === 0 && height === 0) ? alert('data tidak boleh bernilai 0') : null;
