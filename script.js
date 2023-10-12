@@ -14,7 +14,7 @@ function calculateBMI() {
     // }
 
     if (!regex(weight, height)) {
-        alert('tidak boleh ada simbol!');
+        alert('tidak boleh menginputkan nilai negatif!');
         return;
     }
 
