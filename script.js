@@ -2,13 +2,19 @@ function calculateBMI() {
     let weight = parseFloat(document.getElementById('weight').value);
     let height = parseFloat(document.getElementById('height').value);
 
-    if (isNaN(weight) || isNaN(height)) {
-        document.getElementById('result').innerHTML = '<b>Not A Number!</b>';
+    if (isNaN(weight) || isNaN(height) || weight == "" || height == "") {
+        document.getElementById('result').innerHTML = '<b>Data tidak boleh kosong atau 0 atau bukan angka!!</b>';
         return;
     }
+    
 
-    if (weight === 0 && height === 0) {
-        document.getElementById('result').innerHTML = `<b>The Number can't be 0</b>`;
+    // if (weight === 0 && height === 0) {
+    //     document.getElementById('result').innerHTML = `<b>The Number can't be 0</b>`;
+    //     return;
+    // }
+
+    if (!regex(weight, height)) {
+        alert('tidak boleh ada simbol!');
         return;
     }
 
@@ -36,4 +42,9 @@ function calculateBMI() {
 
     let resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `<p>Your BMI is <b> ${bmi} </b>which means You Are <b>${category}</b></p>`;
+}
+
+function regex(weight, height) {
+    let validRegex = /^\d*\.?\d+$/;
+    return validRegex.test(weight) && validRegex.test(height);
 }
