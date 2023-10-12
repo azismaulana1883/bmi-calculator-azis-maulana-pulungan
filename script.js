@@ -3,7 +3,7 @@ function calculateBMI() {
     let height = parseFloat(document.getElementById('height').value);
 
     if (isNaN(weight) || isNaN(height) || weight == "" || height == "") {
-        document.getElementById('result').innerHTML = '<b>Data tidak boleh kosong atau 0 atau bukan angka!!</b>';
+        alert('Data tidak boleh kosong atau 0 atau bukan angka!!')
         return;
     }
     
